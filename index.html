@@ -8,6 +8,44 @@
     />
     <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
     <style type="text/css">
+         @media screen and (max-width: 600px) {
+        .x_columns {
+          flex-direction: column;
+        }
+  
+        .x_column {
+          flex: 1;
+          width: 100% !important;
+          box-sizing: border-box;
+        }
+        .x_cta{
+          width: 88%;
+          text-align: left;
+          box-sizing: border-box;
+          margin-right: 20px;  
+          margin-top: 0 !important; 
+        }
+        .x_fondo{
+          background-image: url('./assets/hero-background.jpg')!important;
+          background-size: cover; 
+          background-position: center; 
+          background-repeat: no-repeat;
+        }
+        .x_cuerpo{
+          padding: 0px 20px !important;
+        }
+        .x_cta2{
+          padding: 10px 3px !important;
+        }   
+        .x_menu {
+        flex-direction: column;
+      }
+
+      .x_menuItem {
+        border-right: none; 
+        margin-bottom: 10px;
+      }    
+      }
     </style>
   </head>
 <body style="margin: 0 auto; padding: 0; font-family: Arial, sans-serif;">
@@ -95,6 +133,61 @@
             </td>
         </tr> 
           <!-- Fin Header -->
+              <!-- Hero -->
+    <tr>
+        <td style="padding: 20px;">
+          <div 
+          class="x_columns x_fondo" 
+          style="
+          display: flex;
+          background-image: url('./assets/hero-background.jpg');
+          background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+          background-position: center; /* Centra la imagen en el fondo */
+          background-repeat: no-repeat;
+          ">
+          <!--[if mso]>
+      <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
+        <tr>
+          <td style="background-image:url('./assets/hero-background.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+    <![endif]-->
+            <div 
+            class="x_column" 
+            style=" 
+            flex: 1;
+            box-sizing: border-box;
+            padding: 20px;
+            width: 50%;
+            ">
+             <p>
+            <img src="https://cristixndr3s.github.io/email/pg-prueba/assets/check.png" width="19" height="19" loading="lazy" alt="check" style="height: auto; max-width: 100%; width: 19px; margin-left: 0px; margin-right: 10px; float: left;">
+            <strong>NUNC QUIS MASSA</strong>
+            </p>
+             <h1 style="font-size: 1.2rem;">Donec lacinia sem ut diam efficitur pharetra</h1>
+            </div>
+            <div 
+            class="x_column" 
+            style="flex: 1; 
+            box-sizing: border-box; 
+            width: 50%; 
+            text-align: right; 
+            padding: 0px;
+            ">
+              <p>
+                <a class="x_cta" href="https://www.cristiandres.com/" rel="noopener" style="margin-top: 40%; display: inline-block; background-color: #92c01f; padding: 10px 20px; text-decoration: none; color: #fff;">
+                  LEARN MORE 
+                  <img src="./assets/chevron-right.png" alt="chevron" width="10px" style="vertical-align: text-bottom;">
+                </a>
+              </p>
+            </div>
+          </div>
+            <!--[if mso]>
+          </td>
+        </tr>
+      </table>
+    <![endif]-->
+        </td>
+    </tr>
+    <!--Fin Hero --> 
 
     </table>
 
